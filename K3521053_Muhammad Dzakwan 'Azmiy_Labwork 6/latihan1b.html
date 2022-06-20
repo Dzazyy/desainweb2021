@@ -1,0 +1,55 @@
+<IDOCTYPE html> 
+<html>
+<head>
+    <title>Menggunakan media Query CSS3</title> 
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <style>
+        .smartphone{
+
+            display: none;
+        }
+        .laptop{
+            display: none;
+        }
+        @media screen and (min-width: 1024px){
+            body{
+                background-color: blue;
+            }
+            .laptop{ 
+                display: block;
+                
+            }
+            .laptop h2 {
+                color: white;
+            }
+            h3{
+                color: azure;
+            }
+        }
+        @media only screen and (max-width: 428px){ 
+            body{
+                background-color: yellow;
+            }
+            .smartphone{ 
+                display: block;
+            }
+            .laptop{
+                display: none;
+            }
+        }
+        
+    </style>
+</head> 
+<body>
+    <h3>Menggunakan Media Query CSS 3</h3> 
+    <div class="smartphone">
+        <h2>Terdeteksi ukuran smartphone</h2> 
+    </div>
+    <div class="laptop">
+        <h2>
+            terdeksi ukuran lebih dari 1024px
+        </h2>
+        <img src="logo uns.png">
+    </div>
+</body> 
+</html>

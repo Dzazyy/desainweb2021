@@ -1,0 +1,48 @@
+body {
+    margin: 0px;
+    padding: 0px; 
+    background:#e1e1e1;
+}
+.header {
+     background: rgba(0, 0, 8, 0.9); 
+     padding: 6px 24px;
+     text-align: left; 
+     color: white;
+     margin: 0px; 
+     Letter-spacing: 1px; 
+     font: caption; 
+     font-size: 24px; 
+     text-transform: uppercase;
+} 
+.video-container { 
+    position: relative; 
+    z-index: -1;
+    top: 0px;
+} 
+.video-container iframe{
+    width: 100%; 
+    height: 90vh;
+    } 
+.content{
+    padding: 0px 24px; 
+    text-align: justify; 
+    font-size: 20px;
+}
+.menu{
+    position: sticky;
+    top: 0;
+    background-color: rgb(20, 145, 20);
+    overflow: hidden;
+}
+.menu a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.menu a:hover {
+    background-color: #ddd;
+    color: black;
+  }
